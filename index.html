@@ -29,7 +29,6 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-
 <!-- NAVBAR -->
 <nav class="bg-black text-white px-6 py-4 flex items-center justify-between">
   <!-- LOGO -->
@@ -42,7 +41,7 @@
     <li><a href="#galeria" class="hover:text-yellow-400 transition">Galeria</a></li>
     <li><a href="#contato" class="hover:text-yellow-400 transition">Valores</a></li>
     <li>
-      <a class="bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition" href="#agenda">
+      <a class="bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition agendamento-btn" href="#">
         Agendar
       </a>
     </li>
@@ -65,7 +64,7 @@
     <li><a href="#galeria" class="hover:text-yellow-400 transition">Galeria</a></li>
     <li><a href="#contato" class="hover:text-yellow-400 transition">Valores</a></li>
     <li>
-      <a class="bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition inline-block" href="#agenda">
+      <a class="bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition inline-block agendamento-btn" href="#">
         Agendar
       </a>
     </li>
@@ -96,32 +95,25 @@
           Cavalheiros Barbearia, 9 anos de tradição em Canoas. Ambiente premium, bebidas cortesia e atendimento infantil exclusivo.
         </span>
       </p>
-      <a class="bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition" href="#agenda">
+      <a class="bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition agendamento-btn" href="#">
         Agende agora pelo WhatsApp
       </a>
     </div>
 
-
-    <!-- Formulário -->
-<form action="https://formsubmit.co/vandre.farias@gmail.com" method="POST" class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-xl shadow-lg space-y-4">
-  <!-- Campos OCULTOS ESSENCIAIS (não remova!) -->
-  <input type="hidden" name="_next" value="https://www.cavalheirosbarbearia.com.br/obrigado.html"> <!-- 👈 SUBSTITUA pelo SEU DOMÍNIO -->
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_captcha" value="false">
-  
-  <!-- Campos VISÍVEIS -->
-  <input type="text" name="nome" placeholder="Nome" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
-  <input type="email" name="email" placeholder="E-mail" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
-  <input type="tel" name="telefone" placeholder="Telefone" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
-  
-  <button type="submit" class="w-full bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition">
-    Agendar agora
-  </button>
-</form>
-
-  <!-- Mobile: imagem no topo -->
+    <!-- Formulário Desktop -->
+    <form id="agendamentoDesktop" class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-xl w-full max-w-md shadow-lg space-y-4">
+      <h2 class="text-xl font-semibold mb-2 text-yellow-400">Agendar corte</h2>
+      <input type="text" name="nome" placeholder="Nome" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
+      <input type="email" name="email" placeholder="E-mail" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
+      <input type="tel" name="telefone" placeholder="Telefone" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
+      <button type="submit" class="w-full bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition">
+        agendar agora
+      </button>
+    </form>
+  </div>
 </header>
-  <div class="md:hidden w-full h-[400px] bg-center bg-cover bg-no-repeat" style="background-image: url('000.jpg');"></div>
+
+<div class="md:hidden w-full h-[400px] bg-center bg-cover bg-no-repeat" style="background-image: url('000.jpg');"></div>
 
 <!-- SECTION: conteúdo para o mobile (centralizado) -->
 <section class="md:hidden text-center px-6 py-6 text-white flex flex-col items-center">
@@ -130,27 +122,22 @@
   </h1>
   <p class="text-lg mb-2">Av. Rio Grande do Sul, 1590 - Mathias Velho, Canoas - RS</p>
   <p class="mb-6"><span class="font-semibold">Cavalheiros Barbearia, 9 anos de tradição em Canoas. Ambiente premium, bebidas cortesia e atendimento infantil exclusivo.</span></p>
-  <a class="bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition" href="#agenda">
+  <a class="bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition agendamento-btn" href="#">
     Agende agora pelo WhatsApp
   </a>
 </section>
 
+<!-- Formulário Mobile -->
 <section class="md:hidden bg-black text-white px-6 py-8" id="agenda">
-<form action="https://formsubmit.co/vandre.farias@gmail.com" method="POST" class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-xl shadow-lg space-y-4">
-  <!-- Campos OCULTOS ESSENCIAIS (não remova!) -->
-  <input type="hidden" name="_next" value="https://www.cavalheirosbarbearia.com.br/obrigado.html"> <!-- 👈 SUBSTITUA pelo SEU DOMÍNIO -->
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_captcha" value="false">
-  
-  <!-- Campos VISÍVEIS -->
-  <input type="text" name="nome" placeholder="Nome" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
-  <input type="email" name="email" placeholder="E-mail" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
-  <input type="tel" name="telefone" placeholder="Telefone" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
-  
-  <button type="submit" class="w-full bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition">
-    Agendar agora
-  </button>
-</form>
+  <form id="agendamentoMobile" class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-xl w-full shadow-lg space-y-4 max-w-md mx-auto">
+    <h2 class="text-xl font-semibold mb-2 text-yellow-400 text-center">Agendar corte</h2>
+    <input type="text" name="nome" placeholder="Nome" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
+    <input type="email" name="email" placeholder="E-mail" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
+    <input type="tel" name="telefone" placeholder="Telefone" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
+    <button type="submit" class="w-full bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition">
+      Agendar Agora
+    </button>
+  </form>
 </section>
 
 <style>
@@ -158,8 +145,10 @@
     margin: 0;
     padding: 0;
   }
+  html {
+    scroll-behavior: smooth;
+  }
 </style>
-
 
   <!-- Ambiente Section -->
 <section class="py-10 bg-black text-white" id="sobre">
@@ -238,10 +227,10 @@
     </div>
   </div>
   <div class="w-full flex justify-center">
-  <a class="mt-8 bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition" href="#agenda">
-    Agende agora pelo WhatsApp
-  </a>
-</div>
+    <a class="mt-8 bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition agendamento-btn" href="#">
+      Agende agora pelo WhatsApp
+    </a>
+  </div>
 </section>
 
 <!-- Alpine.js data -->
@@ -305,18 +294,13 @@
 
     <!-- Botão -->
     <div class="w-full flex flex-col items-center justify-center">
-      <a class="mt-8 bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition" href="#agenda">
+      <a class="mt-8 bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition agendamento-btn" href="#">
         Agende agora pelo WhatsApp
       </a>
     </div>
   </div>
 </section>
 
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
 <div class="py-10 bg-black text-white " id="galeria">
     <div class="max-w-6xl mx-auto px-4  flex flex-col items-center justify-center">
       <h2 class="text-3xl font-bold mb-8 text-center">Nossos Cortes</h2>
@@ -331,11 +315,10 @@
         <img src="corte07.jpeg" alt="Corte 7" class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
         <img src="corte08.jpeg" alt="Corte 8" class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
       </div>
-    <a class="mt-8 bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition" href="#agenda">
+    <a class="mt-8 bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition agendamento-btn" href="#">
       Agende agora pelo WhatsApp
     </a>
   </div>
-
 </div>
 
   <!-- Serviços Section -->
@@ -381,27 +364,24 @@
       <h3 class="text-xl font-semibold text-white mb-2">Luzes</h3>
       <p class="text-yellow-400 text-2xl font-bold">R$ 100,00</p>
     </div>
-
   </div>
   <div class="w-full flex justify-center">
-  <a class="mt-8 bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition" href="#agenda">
-    Agende agora pelo WhatsApp
-  </a>
-</div>
+    <a class="mt-8 bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition agendamento-btn" href="#">
+      Agende agora pelo WhatsApp
+    </a>
+  </div>
 </section>
 
-<section class="py-10 bg-black text-white  md:flex-row">
+<section class="py-10 bg-black text-white md:flex-row">
   <div class="max-w-4xl mx-auto text-center">
     <h2 class="text-3xl font-bold mb-6">Espaço kids</h2>
     <p class="mb-4">Transformamos o corte numa aventura: cadeiras temáticas, tablets e equipe treinada para tornar o momento divertido e seguro para o seu filho. Mães aprovam, crianças adoram! </p>
     <img src="meninonabarbearia.jpg" alt="">
-
   </div>
 </section>    
 
-
-  <!-- Depoimentos Section -->
- <section class="px-6 py-12 max-w-4xl mx-auto">
+<!-- Depoimentos Section -->
+<section class="px-6 py-12 max-w-4xl mx-auto">
   <h2 class="text-2xl font-bold mb-6 text-center text-white">O Que Dizem Nossos Clientes?</h2>
   <p class="mb-8 text-center text-yellow-400">
     Contamos com mais de 160 avaliações no Google, refletindo a qualidade do nosso serviço e atendimento
@@ -433,10 +413,10 @@
   setInterval(() => {
     currentIndex = (currentIndex + 1) % totalSlides;
     track.style.transform = `translateX(-${currentIndex * 100}%)`;
-  }, 5000); // troca a cada 3 segundos
+  }, 5000);
 </script>
 
-  <!-- Mapa / Localização -->
+<!-- Mapa / Localização -->
 <div class="bg-black text-white py-10 px-4 text-center">
   <h2 class="text-3xl font-bold mb-4">Localização</h2>
   <p class="mb-6">Venha nos visitar em Canoas</p>
@@ -453,19 +433,19 @@
   </div>
 </div>
 
-  <!-- CTA Final -->
-  <section class="px-6 py-12 text-center">
-    <h2 class="text-2xl font-bold mb-4">Pronto para uma nova experiência na barbearia?</h2>
-    <p class="mb-6">A agenda desta semana está quase cheia! Garanta seu horário agora e sinta a diferença de um corte premium.</p>
-    <a class="inline-block bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition" href="#agenda">Quero agendar agora!</a>
-  </section>
+<!-- CTA Final -->
+<section class="px-6 py-12 text-center">
+  <h2 class="text-2xl font-bold mb-4">Pronto para uma nova experiência na barbearia?</h2>
+  <p class="mb-6">A agenda desta semana está quase cheia! Garanta seu horário agora e sinta a diferença de um corte premium.</p>
+  <a class="inline-block bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition agendamento-btn" href="#">Quero agendar agora!</a>
+</section>
 
-  <!-- Rodapé -->
+<!-- Rodapé -->
 <footer class="bg-neutral-800 text-center text-sm py-6 text-white">
   <p class="mb-2">Barbearia Cavalheiros | Mathias Velho, Canoas-RS</p>
   
   <div class="flex justify-center space-x-6 text-xl mb-2">
-    <a href="https://wa.me/SEUNUMERO" target="_blank" aria-label="WhatsApp" class="hover:text-green-400 transition">
+    <a href="https://api.whatsapp.com/send/?phone=5551984050777&text=Ola%2C+vim+atraves+do+site+quero+agendar+um+horario&type=phone_number&app_absent=0" target="_blank" aria-label="WhatsApp" class="hover:text-green-400 transition">
       <i class="fab fa-whatsapp"></i>
     </a>
     <a href="https://instagram.com/SEUUSUARIO" target="_blank" aria-label="Instagram" class="hover:text-pink-400 transition">
@@ -478,11 +458,67 @@
 
   <p>© 2025 Cavalheiros Barbearia – Todos os direitos reservados.</p>
 </footer>
-<div id="microModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
-  <div class="bg-white text-black px-6 py-4 rounded-lg shadow-lg text-center">
-    <p class="text-lg font-medium">Redirecionando para o WhatsApp...</p>
-    <div class="mt-2 animate-pulse text-yellow-600">Aguarde alguns instantes</div>
-  </div>
-</div> 
+
+<!-- Script de Controle dos Formulários -->
+<script>
+  // Função para enviar formulário
+  async function enviarFormulario(form) {
+    const btn = form.querySelector('button[type="submit"]');
+    const btnOriginal = btn.innerHTML;
+    
+    try {
+      // Mostrar loading
+      btn.disabled = true;
+      btn.innerHTML = 'Enviando...';
+      
+      // Enviar dados para o FormSubmit
+      await fetch('https://formsubmit.co/ajax/vandre.farias@gmail.com', {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      // Redirecionar para obrigado.html
+      window.location.href = "obrigado.html";
+      
+    } catch (error) {
+      alert("Erro ao enviar. Por favor, tente novamente.");
+      btn.disabled = false;
+      btn.innerHTML = btnOriginal;
+    }
+  }
+
+  // Adicionar eventos aos formulários
+  document.getElementById('agendamentoDesktop').addEventListener('submit', function(e) {
+    e.preventDefault();
+    enviarFormulario(this);
+  });
+  
+  document.getElementById('agendamentoMobile').addEventListener('submit', function(e) {
+    e.preventDefault();
+    enviarFormulario(this);
+  });
+
+  // Scroll suave para o formulário
+  document.querySelectorAll('.agendamento-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const isMobile = window.innerWidth < 768;
+      const formId = isMobile ? 'agendamentoMobile' : 'agendamentoDesktop';
+      
+      document.getElementById(formId).scrollIntoView({
+        behavior: 'smooth'
+      });
+      
+      // Destaque visual
+      const form = document.getElementById(formId);
+      form.classList.add('ring-2', 'ring-yellow-400');
+      setTimeout(() => form.classList.remove('ring-2', 'ring-yellow-400'), 2000);
+    });
+  });
+</script>
 </body>
 </html>
