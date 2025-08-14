@@ -103,13 +103,19 @@
 
 
     <!-- Formulário -->
-<form action="obrigado.html" method="POST" class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-xl w-full max-w-md shadow-lg space-y-4">
-  <h2 class="text-xl font-semibold mb-2 text-yellow-400">Agendar corte</h2>
+<form action="https://formsubmit.co/vandre.farias@gmail.com" method="POST" class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-xl shadow-lg space-y-4">
+  <!-- Campos OCULTOS ESSENCIAIS (não remova!) -->
+  <input type="hidden" name="_next" value="https://www.cavalheirosbarbearia.com.br/obrigado.html"> <!-- 👈 SUBSTITUA pelo SEU DOMÍNIO -->
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  
+  <!-- Campos VISÍVEIS -->
   <input type="text" name="nome" placeholder="Nome" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
   <input type="email" name="email" placeholder="E-mail" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
   <input type="tel" name="telefone" placeholder="Telefone" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
+  
   <button type="submit" class="w-full bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition">
-    agendar agora
+    Agendar agora
   </button>
 </form>
 
@@ -130,12 +136,13 @@
 </section>
 
 <section class="md:hidden bg-black text-white px-6 py-8" id="agenda">
-<form action="https://formsubmit.co/vandre.farias@gmail.com" method="POST" class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-xl w-full max-w-md shadow-lg space-y-4">
-  <!-- Campos Ocultos Necessários -->
-  <input type="hidden" name="_next" value="https://www.cavalheirosbarbearia.com.br/obrigado.html">
+<form action="https://formsubmit.co/vandre.farias@gmail.com" method="POST" class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-xl shadow-lg space-y-4">
+  <!-- Campos OCULTOS ESSENCIAIS (não remova!) -->
+  <input type="hidden" name="_next" value="https://www.cavalheirosbarbearia.com.br/obrigado.html"> <!-- 👈 SUBSTITUA pelo SEU DOMÍNIO -->
+  <input type="hidden" name="_template" value="table">
   <input type="hidden" name="_captcha" value="false">
   
-  <!-- Campos Visíveis -->
+  <!-- Campos VISÍVEIS -->
   <input type="text" name="nome" placeholder="Nome" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
   <input type="email" name="email" placeholder="E-mail" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
   <input type="tel" name="telefone" placeholder="Telefone" required class="w-full px-4 py-2 rounded bg-white bg-opacity-20 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
